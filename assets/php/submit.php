@@ -19,15 +19,15 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['subject']) &
 	$mail->Port=587; //specify SMTP Port
 	$mail->SMTPSecure="tls"; // Enable TLS encryption, `ssl` also accepted
 	$mail->SMTPAuth=true; // Enable SMTP authentication
-	$mail->Username="your_email@gmail.com";  // Your Mail
+	$mail->Username="gtiwa712@gmail.com";  // Your Mail
 	$mail->Password="Your App Password"; // Your app password
 
 	$mail->setFrom($email, $name);  
-	$mail->addAddress("your_email@gmail.com", "your name"); // (Your Mail) An email address that will receive the email with the output of the form
+	$mail->addAddress("gtiwa712@gmail.com", "Grace"); // (Your Mail) An email address that will receive the email with the output of the form
 
 	$mail->IsHTML(true); // Set email format to HTML
 
-	$mail->Subject = "(Elora) New Contact Info";
+	$mail->Subject = "(Grace) New Contact Info";
 	$mail->Body = $html;
 
 	$mail->SMTPOptions=array('ssl'=>array(
